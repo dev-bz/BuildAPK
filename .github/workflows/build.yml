@@ -13,6 +13,10 @@ jobs:
       - name: Gradle help
         run: gradle --help
       - name: Gradle init Android
-        run: gradle init
+        run: |
+          mkdir project && cd project
+          gradle init --type android
       - name: List files
-        run: find
+        run: |
+          find -name "*.gradle"
+          find -name "*.gradle" -exec cat {} \;
