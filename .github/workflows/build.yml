@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: cd project && gradle build
       - name: List build
-        run: find project -type f
+        run: find project -type f -name "*.apk"
