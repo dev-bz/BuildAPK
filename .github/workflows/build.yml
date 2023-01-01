@@ -14,3 +14,5 @@ jobs:
         run: gradle --help
       - name: Gradle init Android
         run: gradle init
+      - name: List files
+        run: find
