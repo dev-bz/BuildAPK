@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        api: [29,31,32]
+        api: [29,30,31,32]
     steps:
       - uses: actions/checkout@v3
       - name: Gradle help
