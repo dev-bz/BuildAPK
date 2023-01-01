@@ -15,7 +15,7 @@ jobs:
       - name: Gradle init Android
         run: |
           mkdir project && cd project
-          gradle init --type android
+          gradle init --type java-application
       - name: List files
         run: |
           find -name "*.gradle"
