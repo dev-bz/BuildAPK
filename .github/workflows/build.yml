@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run a one-line script
+      - name: Gradle help
         run: gradle --help
+      - name: Gradle init Android
+        run: gradle init --help
