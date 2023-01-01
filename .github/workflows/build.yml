@@ -20,3 +20,7 @@ jobs:
         run: find project -type f
       - name: List files
         run: find -type f -name "*.gradle" -exec cat {} \;
+      - name: Build
+        run: cd project && gradle build
+      - name: List build
+        run: find project -type f
