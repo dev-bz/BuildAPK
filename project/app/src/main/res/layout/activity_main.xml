@@ -20,11 +20,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <ScrollView
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    android:orientation="vertical"
-	    android:gravity="center"
 	    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 	
     <EditText
@@ -34,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Hello User!"/>
             
-    </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
