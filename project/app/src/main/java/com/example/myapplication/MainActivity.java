@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 		
 		// Use lambdas
-		binding.fab.setOnClickListener(v -> Toast.makeText(MainActivity.this, "Replace with your action", Toast.LENGTH_SHORT).show());
+		binding.fab.setOnClickListener(v -> {
+			Toast t = Toast.makeText(MainActivity.this, "Replace with your action", Toast.LENGTH_SHORT);
+			t.setGravity(android.view.Gravity.TOP|android.view.Gravity.CENTER_HORIZONTAL,0,0);
+			t.show();
+		});
     }
 }
